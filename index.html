@@ -101,7 +101,7 @@
     function closeLightbox(){lightbox.classList.remove('open');lightboxImage.removeAttribute('src')}
     document.querySelectorAll('.portrait,.chat-shot,.fish-shot,.travel-track img').forEach(img=>{
       img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label','点击放大照片');
-      const open=()=>{lightboxImage.src=img.dataset.full||img.src;lightboxImage.alt=img.alt;lightbox.classList.add('open')};
+      const open=()=>{lightboxImage.src=img.src;lightboxImage.alt=img.alt;lightbox.classList.add('open');const full=img.dataset.full;if(full){const pre=new Image();pre.onload=()=>{if(lightbox.classList.contains('open'))lightboxImage.src=full};pre.src=full}};
       img.addEventListener('click',open);
       img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
     });
