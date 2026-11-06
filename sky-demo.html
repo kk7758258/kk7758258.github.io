@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#050608">
+  <title>KK 这个网址永远留给我们</title>
+  <link rel="icon" sizes="32x32" href="/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="7758258 星">
+  <meta name="application-name" content="7758258 星">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&family=Noto+Serif+SC:wght@300;400&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;background:#050608}body{color:#eceef2;font-family:'DM Sans','Noto Serif SC',serif;overflow:hidden}button{font:inherit;color:inherit;cursor:pointer}#galaxy{position:fixed;inset:0;width:100%;height:100%;opacity:.7}.veil{position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 65% 48%,transparent,#050608 68%)}
+    .warp-flash{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .55s ease;background:radial-gradient(circle at 65% 49%,rgba(211,220,255,.2),rgba(126,139,197,.04) 22%,transparent 40%)}.warp-flash.on{opacity:1}.page{position:relative;z-index:2;height:100svh;padding:28px 5%;display:flex;flex-direction:column}.top,.bottom{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.25em;color:#686d77}.top i{display:inline-block;width:4px;height:4px;border:1px solid #a4aaba;border-radius:50%;margin-right:10px;vertical-align:2px}.bottom{color:#515660}.center{flex:1;display:grid;place-items:center;text-align:center}.view{grid-area:1/1;transition:opacity 1s,transform 1s,visibility 1s}.view.hidden{opacity:0;transform:translateY(-10px);visibility:hidden;pointer-events:none;transition:none}.view.leaving{opacity:0!important;transform:translateY(-6px) scale(.985)!important;transition:opacity .3s ease,transform .45s ease!important}.eyebrow{font-size:8px;letter-spacing:.38em;color:#696f7b;margin-bottom:25px}.view h1{font-family:'Noto Serif SC',serif;font-weight:400;font-size:clamp(29px,4vw,50px);line-height:1.7;letter-spacing:.035em}.open{margin-top:38px;padding:12px 2px;border:0;border-bottom:1px solid #4b505a;background:none;font-size:10px;letter-spacing:.22em;color:#a9adb6;transition:.3s}.open:hover{border-color:#e5e7ed;color:#fff}.answer h1{font-size:clamp(35px,5vw,62px)}.answer h1 span{display:block;font-size:.52em;margin-top:14px;color:#c5c8d0}.answer p{margin-top:28px;color:#606670;font-size:9px;letter-spacing:.25em}.covers{display:flex;justify-content:center;gap:7px;margin:27px auto 0;width:min(368px,100%)}.portrait{display:block;flex:0 0 auto;width:calc((100% - 28px)/5);aspect-ratio:68/84;object-fit:cover;object-position:center 30%;margin:0;border-radius:2px;filter:grayscale(.2);opacity:.9;cursor:zoom-in;transition:opacity .3s,transform .3s}.portrait:hover{opacity:1;transform:translateY(-2px)}.fish-shot,.chat-shot{cursor:zoom-in}.lightbox{position:fixed;inset:0;z-index:80;background:rgba(3,4,6,.95);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}.lightbox.open{opacity:1;visibility:visible}.lightbox img{max-width:92vw;max-height:86svh;object-fit:contain;border-radius:2px;transform:scale(.97);transition:transform .35s}.lightbox.open img{transform:scale(1)}.lightbox-close{position:absolute;top:18px;right:22px;background:none;border:1px solid #454a54;border-radius:50%;width:36px;height:36px;color:#b7bbc4;font-size:20px;line-height:1;cursor:pointer}.lightbox-close:hover{border-color:#b7bbc4;color:#fff}.planet-id{color:#9ba1ac!important;font-size:10px!important;letter-spacing:.16em!important}.planet-id span{display:block;margin-top:7px;color:#4f5560;font-size:8px;letter-spacing:.24em}.history{display:flex;gap:42px;margin-top:30px;text-align:left;color:#646a75;font-family:'Noto Serif SC',serif;font-size:10px;line-height:2}.history div{max-width:245px}.history time{display:block;margin-bottom:5px;color:#9da2ad;font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.15em}.history a{color:inherit;text-decoration:none}.history a:hover{color:#c9cdd5}.history b{display:block;color:#b5bac4;font-weight:400}.new-letter{margin-top:24px;background:rgba(224,184,200,.06);border:1px solid #b88fa1;border-radius:4px;padding:15px 26px;color:#f0c4d5;font-family:'Noto Serif SC',serif;font-size:15px;letter-spacing:.16em;box-shadow:0 0 24px rgba(224,184,200,.06)}.new-letter small{display:block;border:0;margin-top:14px;color:#b895a4;font-family:'Noto Serif SC',serif;font-size:10px;letter-spacing:.1em}.avatars{display:flex;justify-content:center;gap:14px;margin-top:35px}.avatars img{width:min(180px,32vw);aspect-ratio:1;object-fit:cover;border-radius:3px}.letter-note{margin-top:22px!important;color:#888e99!important;letter-spacing:.12em!important}.back{margin-top:36px;background:none;border:0;color:#656b76;font-size:9px;letter-spacing:.15em}.next-letter{margin-top:30px;padding:12px 22px;font-size:12px}.dream{max-height:74svh;overflow-y:auto;padding:22px 12px;scrollbar-width:none}.dream::-webkit-scrollbar{display:none}.dream h1{font-size:clamp(26px,3.5vw,42px)}.dream-text{max-width:540px;margin:28px auto 0;text-align:left;font-family:'Noto Serif SC',serif;font-size:14px;line-height:2.1;color:#c3c7cf}.dream-text strong{color:#efc2d2;font-weight:400}.chat-shot{display:block;width:min(300px,78vw);margin:28px auto 0;border-radius:5px;opacity:1}.poke{display:flex;align-items:center;justify-content:center;gap:6px;margin:20px auto 0}.poke span{font-family:'Noto Serif SC',serif;font-size:9px;letter-spacing:.12em;color:#6f747e}.poke i{font-style:normal;font-size:18px;color:#5b606a;transform:translateY(3px)}.secret-star{display:block;margin:0;background:none;border:0;padding:4px;color:#7f8490;font-size:17px;transition:.4s}.secret-star:hover{color:#efc2d2;text-shadow:0 0 12px #efc2d2}.secret{max-width:540px;margin:6px auto 0!important;color:#8f95a0!important;font-family:'Noto Serif SC',serif;font-size:10px!important;line-height:1.9!important;letter-spacing:.05em!important;opacity:0;transform:translateY(4px);transition:.5s}.secret.show{opacity:1;transform:none}.third{width:100%;max-height:78svh;overflow-y:auto;padding:26px 10px;scrollbar-width:none}.third::-webkit-scrollbar{display:none}.third h1{font-size:clamp(24px,3.5vw,40px)}.third-grid{max-width:680px;margin:32px auto 0;text-align:left}.fish-shot{display:block;width:min(360px,100%);aspect-ratio:4/3;object-fit:cover;border-radius:4px;opacity:1;margin:36px auto 0}.third-body{font-family:'Noto Serif SC',serif;font-size:12px;line-height:2.15;color:#aeb3bd;letter-spacing:.035em;text-align:left}.third-body p+p{margin-top:17px}.third .poke{margin-top:28px}.apology-shot{display:block;width:min(212px,54%);margin:32px auto 0;border-radius:4px;box-shadow:0 6px 40px rgba(255,240,235,.07)}#fifth{padding-left:18px;padding-right:18px}@media(min-width:700px){.apology-shot{width:250px}}.apology-end{margin-top:30px!important}.apology-sign{color:#e0b8c8!important;letter-spacing:.06em!important}.travel{width:min(680px,100%);margin:34px auto 0}.travel-track{display:flex;gap:7px;overflow-x:auto;padding-bottom:7px;scroll-snap-type:x mandatory;scrollbar-width:none}.travel-track::-webkit-scrollbar{display:none}.travel-track img{flex:0 0 150px;height:188px;object-fit:cover;border-radius:3px;opacity:.88;scroll-snap-align:start;cursor:zoom-in;transition:opacity .3s}.travel-track img:hover{opacity:1}.travel-video{flex:0 0 106px;height:188px;object-fit:cover;border-radius:3px;background:#000;scroll-snap-align:start}.travel-caption{margin-top:9px;font-size:8px;letter-spacing:.22em;color:#4e535d;text-align:left}.closing{margin-top:32px!important;color:#8b909a!important;letter-spacing:.08em!important;font-family:'Noto Serif SC',serif;font-size:11px!important}
+    @media(max-width:600px){.warp-flash{background:radial-gradient(circle at 53% 49%,rgba(211,220,255,.18),rgba(126,139,197,.035) 24%,transparent 46%)}.page{padding:24px 7%}.top span:last-child{display:none}.bottom{font-size:8px}.view h1{font-size:29px}.answer h1{font-size:38px}.answer h1 span{font-size:22px;line-height:1.8}.history{flex-direction:column;gap:20px;width:min(300px,100%);margin:22px auto 0;text-align:left;font-size:9px}.history div{max-width:none}.history time{display:block;margin:0 0 5px;letter-spacing:.18em}.history b{margin-bottom:4px}.closing{margin-top:22px!important}.third{padding:18px 4px}.third-grid{margin-top:24px}.fish-shot{width:min(300px,90%);margin:28px auto 0;aspect-ratio:4/3}.third-body{font-size:11.5px;line-height:2}.third h1{font-size:26px}#galaxy{opacity:.58}.latest{margin-top:10px;font-size:8.5px;letter-spacing:.14em}}
+    @media(max-height:700px){#answer .eyebrow{margin-bottom:16px}.covers{margin-top:18px}#answer .history{margin-top:14px!important}.latest{margin-top:8px}.new-letter{margin-top:16px}}
+  
+    .back{transition:color .3s}.back:hover{color:#dfe2e9}
+    .letter-nav{display:flex;align-items:center;justify-content:center;gap:15px;margin-top:34px}
+    .letter-nav .back{margin-top:0}
+    .nav-sep{width:1px;height:9px;background:#2b2e35}
+    .latest{display:flex;align-items:center;justify-content:center;gap:8px;margin:14px auto 0;padding:0;background:none;border:0;color:#8a9099;font-size:9px;letter-spacing:.18em;transition:color .3s}
+    .latest:hover{color:#d3d7de}
+    .latest i{width:3px;height:3px;border-radius:50%;background:#d9a9bd;box-shadow:0 0 7px rgba(224,184,200,.9);animation:twinkle 3.2s ease-in-out infinite}
+    @keyframes twinkle{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+  
+    .runner{position:relative;height:52px;margin:14px auto 0;width:100%;overflow:hidden}
+    .runner-move{position:absolute;left:-46px;bottom:0;animation:runner-x 7s linear infinite}
+    .runner-move img{display:block;width:44px;height:auto;animation:runner-hop .36s ease-in-out infinite alternate}
+    @keyframes runner-x{from{left:-46px}to{left:100%}}
+    @keyframes runner-hop{from{transform:translateY(0) rotate(-2.5deg)}to{transform:translateY(-5px) rotate(2.5deg)}}
+    @media(max-width:600px){.runner{height:47px}.runner-move img{width:40px}.runner-move{animation-duration:4.2s}}
+
+    /* 高级版预览：私人档案馆式排版，不改星空 */
+    :root{--paper:#f2f0ec;--quiet:#8b8b8f;--faint:#5e5f64;--hair:rgba(255,255,255,.14);--rose:#c7a2ae}
+    ::selection{background:rgba(199,162,174,.32);color:#fff}
+    .top,.bottom{font-size:8px;letter-spacing:.28em;color:#66676d}
+    .top{align-items:center}
+    .top i{width:5px;height:5px;border:0;border-radius:50%;background:#3dd07a;box-shadow:0 0 5px rgba(61,208,122,.85),0 0 11px rgba(61,208,122,.32);vertical-align:1px;animation:online 3.6s ease-in-out infinite}
+    @keyframes online{0%,100%{box-shadow:0 0 5px rgba(61,208,122,.8),0 0 11px rgba(61,208,122,.26)}50%{box-shadow:0 0 8px rgba(61,208,122,1),0 0 17px rgba(61,208,122,.44)}}
+    @media(prefers-reduced-motion:reduce){.top i{animation:none}}
+    .home-pill{display:none;position:relative;align-items:center;justify-content:center;min-height:30px;padding:4px 0 6px;border:0;background:none;color:#e2ddd7;font-family:'DM Sans','Noto Serif SC',sans-serif;font-size:9px;font-weight:300;letter-spacing:.16em;white-space:nowrap;transition:color .3s}
+    body.reading .home-pill{display:inline-flex}
+    .home-pill::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:rgba(242,240,236,.26);transform-origin:left;transition:background .3s,transform .35s}
+    .home-pill:hover{color:#fff}
+    .home-pill:hover::after{background:#f2f0ec;transform:scaleX(1.04)}
+    .answer{width:min(1240px,100%);max-height:86svh;overflow-y:auto;scrollbar-width:none;padding:20px 0 14px;text-align:left}
+    .answer::-webkit-scrollbar{display:none}
+    .home-layout{display:grid;grid-template-columns:minmax(300px,.82fr) minmax(420px,1.18fr);grid-template-rows:minmax(0,1fr) auto;grid-template-areas:"intro covers" "history history";column-gap:clamp(40px,5vw,76px);row-gap:28px;width:100%;min-height:min(72svh,680px)}
+    .home-intro{grid-area:intro;align-self:center;padding-left:8px}
+    .answer .eyebrow{font-family:'DM Sans',sans-serif;font-size:8px;letter-spacing:.44em;color:#8c898d;margin-bottom:22px}
+    .answer h1{font-weight:300;font-size:clamp(72px,7.2vw,104px);line-height:1.12;letter-spacing:.10em;margin-left:-.06em;color:var(--paper)}
+    .answer .planet-id{margin-top:34px;color:#8d8c91!important;font-size:9px!important;line-height:2.2;letter-spacing:.24em!important}
+    .answer .planet-id span{color:#65666b;letter-spacing:.22em}
+    .home-actions{display:flex;flex-direction:row;align-items:center;gap:8px;margin-top:38px}
+    .new-letter{display:inline-flex;align-items:center;justify-content:center;min-width:0;min-height:44px;margin:0;padding:0 16px;border:1px solid rgba(242,240,236,.58);border-radius:0;background:rgba(255,255,255,.035);color:#f2f0ec;font-family:'DM Sans','Noto Serif SC',serif;font-weight:300;font-size:10px;line-height:1.5;letter-spacing:.16em;box-shadow:none;text-align:center;transition:background .3s,border-color .3s,color .3s}
+    .new-letter:hover{border-color:#fff;background:rgba(255,255,255,.09);color:#fff}
+    .new-letter small{display:none}
+    .latest{justify-content:center;min-height:44px;margin:0;padding:0 16px;border:1px solid rgba(242,240,236,.22);border-radius:0;background:transparent;color:#a9a6a2;font-size:8px;letter-spacing:.14em;transition:color .3s,border-color .3s,background .3s}
+    .latest:hover{border-color:rgba(242,240,236,.55);background:rgba(255,255,255,.035);color:#fff}
+    .latest i{background:var(--rose);box-shadow:0 0 8px rgba(199,162,174,.7)}
+    .answer .covers{grid-area:covers;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;width:100%;height:min(64svh,650px);margin:0;align-self:center;overflow:hidden}
+    .answer .portrait{width:100%;height:100%;aspect-ratio:auto;border-radius:0;filter:grayscale(.18) saturate(.85) contrast(1.03);opacity:.88;object-position:center 35%;transition:opacity .6s,filter .6s,transform .9s cubic-bezier(.22,.61,.36,1)}
+    .answer .portrait:hover{opacity:1;filter:grayscale(0) saturate(1) contrast(1);transform:scale(1.018)}
+    .answer .history{grid-area:history;display:grid;grid-template-columns:1fr 1fr;gap:0;width:100%;margin:0;padding-top:17px;border-top:1px solid var(--hair);text-align:left;font-size:9px;line-height:1.9;color:#6d6e73}
+    .answer .history>div{display:grid;grid-template-columns:54px minmax(0,1fr);gap:18px;max-width:none;padding-right:44px}
+    .answer .history time{display:block;margin:2px 0 0;color:#929095;font-size:8px;letter-spacing:.16em}
+    .answer .history b{display:block;margin-bottom:5px;color:#b8b6b3;font-size:10px;font-weight:400;letter-spacing:.08em}
+    .answer .history a{text-decoration:none;transition:color .3s}
+    .answer .history a:hover{color:#d5d2ce}
+
+    .third{width:min(760px,100%);max-height:82svh;overflow-y:auto;scrollbar-width:none;padding:18px 22px 36px;text-align:left}
+    .third::-webkit-scrollbar{display:none}
+    .third .eyebrow,.dream .eyebrow,#update .eyebrow{margin-bottom:15px;color:#818085;font-size:8px;letter-spacing:.32em}
+    .third h1{font-weight:300;font-size:31px;line-height:1.6;letter-spacing:.06em;color:var(--paper)}
+    .third-grid{max-width:620px;margin:34px auto 0}
+    .third-body{font-weight:300;font-size:14.5px;line-height:2.12;letter-spacing:.025em;color:#cbc9c6;text-shadow:0 1px 18px #050608}
+    .third-body p+p{margin-top:1.35em}
+    #update{width:min(600px,100%);text-align:left}
+    #update h1,.dream h1{font-weight:300;letter-spacing:.05em}
+    .letter-note{line-height:2;color:#99979a}
+    .third .poke{justify-content:flex-start;margin-top:38px}
+    .third .secret{text-align:left}
+    .fish-shot,.chat-shot,.apology-shot,.travel-track img{border-radius:1px}
+    .fish-shot{width:min(440px,100%);margin-top:38px}
+    .apology-shot{width:min(220px,58%);margin-top:30px}
+    .letter-footer{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;width:100%;max-width:620px;margin:34px auto 0;padding-top:19px;border-top:1px solid var(--hair)}
+    .letter-step{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 18px;border:1px solid rgba(242,240,236,.24);border-radius:0;background:transparent;color:#c2beba;font-size:9px;letter-spacing:.14em;white-space:nowrap;transition:color .3s,border-color .3s,background .3s}
+    .letter-step:hover{border-color:rgba(242,240,236,.64);background:rgba(255,255,255,.035);color:#fff}
+    .letter-step.prev{justify-self:start}
+    .letter-step.next{justify-self:end}
+    .letter-step.placeholder{visibility:hidden}
+    .letter-index{justify-self:center;color:#5f6065;font-size:7px;letter-spacing:.24em;white-space:nowrap}
+    #update .letter-footer{margin-top:30px}
+    .home-pill:focus-visible,.new-letter:focus-visible,.latest:focus-visible,.letter-step:focus-visible{outline:1px solid #f2f0ec;outline-offset:3px}
+    .runner{opacity:.9}
+
+    @media(max-width:900px){
+      .page{padding:22px 6%}
+      .center{min-height:0}
+      .answer{height:100%;min-height:0;max-height:100%;padding:4px 0 14px;overflow-y:auto;overflow-x:hidden}
+      .home-layout{display:flex;flex-direction:column;min-height:0;row-gap:0}
+      .home-intro{padding:8px 0 0}
+      .answer .eyebrow{margin-bottom:14px}
+      .answer h1{font-size:clamp(56px,14.5vw,70px);letter-spacing:.08em}
+      .answer .planet-id{margin-top:15px}
+      .home-pill{min-height:28px;padding:4px 0 5px;font-size:8px;letter-spacing:.13em}
+      .home-actions{margin-top:19px;flex-direction:row;align-items:stretch;gap:8px;flex-wrap:wrap}
+      .new-letter{min-width:0;min-height:44px;padding:0 13px;font-size:9px;letter-spacing:.13em}
+      .new-letter small{display:none}
+      .latest{min-height:44px;margin:0;padding:0 12px;white-space:nowrap;letter-spacing:.12em}
+      .letter-footer{gap:8px;margin-top:28px;padding-top:17px}
+      .letter-step{min-height:42px;padding:0 12px;font-size:8px;letter-spacing:.10em}
+      .letter-index{font-size:7px;letter-spacing:.18em}
+      .answer .covers{display:flex;justify-content:flex-start;width:calc(100% + 12vw);height:38svh;min-height:260px;max-height:330px;margin:19px 0 0 -6vw;padding:0 6vw;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;gap:7px}
+      .answer .covers::-webkit-scrollbar{display:none}
+      .answer .portrait{flex:0 0 66vw;width:66vw;height:100%;scroll-snap-align:start;opacity:.92;filter:none}
+      .answer .history{display:block;margin-top:24px;padding-top:15px;font-size:9px}
+      .answer .history a{display:block;white-space:normal;overflow-wrap:anywhere}
+      .answer .history>div{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:0;max-width:none}
+      .answer .history>div+div{margin-top:15px}
+      .answer .history time{margin:2px 0 0}
+      .third{width:100%;max-height:84svh;padding:12px 2px 30px}
+      .third h1{font-size:25px;line-height:1.65}
+      .third-grid{margin-top:27px}
+      .third-body{font-size:13px;line-height:2.08;letter-spacing:.018em}
+      .third-body p+p{margin-top:1.3em}
+      .third .letter-nav{margin-top:28px}
+    }
+  </style>
+</head>
+<body>
+  <canvas id="galaxy"></canvas><div class="veil"></div><div class="warp-flash" id="warpFlash"></div>
+  <div class="page">
+    <header class="top"><span><i></i>宝宝虫很漂亮</span><button class="home-pill" id="letterHome" type="button" aria-label="返回 7758258 星">← 7758258 星</button></header>
+    <main class="center">
+      <section class="view hidden" id="first"><p class="eyebrow">宝宝虫很漂亮</p><h1>kk这是我们的网页嘿嘿<br>我以后还会继续更新的</h1><button class="open" id="open">打开看看 &nbsp; ↗</button></section>
+      <section class="view answer" id="answer">
+        <div class="home-layout">
+          <div class="home-intro">
+            <p class="eyebrow">宝宝虫很好闻</p>
+            <h1>宝宝虫</h1>
+            <p class="planet-id">这里是7758258星<br><span>01.30 / 07.30</span></p>
+            <div class="home-actions">
+              <button class="new-letter" id="newLetter">第一封信 &nbsp; ↗<small>写给你，也写给以后</small></button>
+              <button class="latest" id="latestJump"><i></i>最近更新 第五封 · 11.05</button>
+            </div>
+          </div>
+          <div class="covers"><img class="portrait" fetchpriority="high" src="assets/t01.webp" srcset="assets/t01.webp 340w, assets/f01.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f01.webp" alt="宝宝虫"><img class="portrait" src="assets/t02.webp" srcset="assets/t02.webp 340w, assets/f02.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f02.webp" alt="宝宝虫侧脸"><img class="portrait" src="assets/t03.webp" srcset="assets/t03.webp 340w, assets/f03.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f03.webp" alt="摸摸宝宝虫的头"><img class="portrait" src="assets/t04.webp" srcset="assets/t04.webp 340w, assets/f04.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f04.webp" alt="宝宝虫在风铃下"><img class="portrait" src="assets/t05.webp" srcset="assets/t05.webp 340w, assets/f05.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f05.webp" alt="宝宝虫在楼梯旁"></div>
+          <div class="history"><div><time>01.30</time><a href="https://www.peopleapp.com/rmharticle/30025849109" target="_blank" rel="noopener"><b>世界曾经很吵</b>1969年的这一天，披头士在伦敦屋顶唱完最后一次。很久以后，这一天成了你的生日。</a></div><div><time>07.30</time><a href="https://www.cnsa.gov.cn/n6758823/n6759010/c6807048/content.html" target="_blank" rel="noopener"><b>人类曾经走得很远</b>1971年的这一天，阿波罗15号登陆月球。五十五年后，我们在一起。</a></div></div>
+        </div>
+      </section>
+      <section class="view hidden" id="update"><p class="eyebrow">宝宝虫很漂亮</p><h1>第一封 · 第一组情头</h1><div class="avatars"><img loading="lazy" decoding="async" src="assets/t06.webp" data-full="assets/f06.webp" alt="我们的第一组情头之一"><img loading="lazy" decoding="async" src="assets/t07.webp" data-full="assets/f07.webp" alt="我们的第一组情头之二"></div><p class="letter-note">从今天开始，把我们的小事慢慢写在这里。</p><div class="letter-footer"><span class="letter-step placeholder" aria-hidden="true"></span><span class="letter-index">01 / 05</span><button class="letter-step next" id="secondLetter">下一封 &nbsp;→</button></div></section>
+      <section class="view dream hidden" id="second"><p class="eyebrow">宝宝虫很漂亮</p><h1>第二封信 · 一个很难过的梦</h1><div class="dream-text"><strong>2026.8.21</strong><br><br>梦到你原来已经和别人结婚了！！我真的好难过😭<br><br>离开老婆虫我绝对会4️⃣的</div><div class="poke"><span>手指点点宝宝虫看看</span><i aria-hidden="true">↝</i><button class="secret-star" id="secretStar" aria-label="这里藏着一句话">🐛</button></div><p class="secret" id="secret">宝宝虫吃饱了，肚子真的会很鼓。</p><img loading="lazy" decoding="async" class="chat-shot" src="assets/t08.webp" data-full="assets/f08.webp" alt="那天的聊天记录"><div class="letter-footer"><button class="letter-step prev" id="backFirst" aria-label="返回第一封信">← 上一封</button><span class="letter-index">02 / 05</span><button class="letter-step next" id="thirdLetter">下一封 &nbsp;→</button></div></section>
+      <section class="view third hidden" id="third"><p class="eyebrow">宝宝虫很漂亮</p><h1>第三封信 2026年8月24日</h1><div class="third-grid"><div class="third-body"><p>听你说 幼师朋友从日本回来以后抽签好像上了瘾 我问 真的有这么上头吗 你讲得很认真 我其实更想看你的表情</p><p>那天我们先去了黄大仙庙 香火很旺 有人拦下我们 说可以祭祖 还让我们烧元宝 话说得很顺 像在介绍一条每个人都该走的路 你看了我一眼 很平静地说不用了 没有争辩 也没有不好意思 我站在你旁边 觉得你这样很好 清醒又坚定 我忽然觉得 比起求神 我更愿意相信你</p><p>在庙里我们两个没有抽签 一支也没有算 我本来觉得来了不算有点可惜 后来又不觉得了 有些问题本来就不需要问 你已经牵着我的手</p><p>再后来 我们去了智者寺边上的小店 也在那里求了签 老板很健谈 我们和他也很投缘 他说鬼节不要到处走 说得很认真 像在提醒三个刚认识的人 临走前 他塞给我们一包零食 让我们拿去喂鱼 鱼食撒下去 锦鲤聚成一小片橘红色的火 黑天鹅游过来 脖子一伸 直接跟小鱼抢</p><p>签文写了什么 我已经记不清了 只记得我们三个人围着看了一会儿 然后很自然地把签放下 好像答案从来不在那张纸上</p><p>宝宝虫笑得很好看</p><p>我站在旁边想 老婆好 小鱼也好 鱼有吃的 天鹅有抢来的 宝宝虫开心 我们各拿着一袋鱼食 世界这样分配 我没有意见</p><p>老板后来又说他的乌鸦 问我们乌鸦怎么了 我没听真切 只看见他一边说 一边比划</p><p>我没有追问</p><p>有时候一个人站在那说很久 不一定是在等一个答案 他只是需要有人站在那里 把话听完</p><p>回程时 我记得那天的顺序 元宝没有烧 庙里的签没有抽 小店的签求了 签文忘了 鱼喂了 天鹅抢了 宝宝虫一直在笑</p><p>黄大仙没有给我们答案</p><p>如果那天非要有一支签 我想签文大概只有七个字</p><p>老婆好 小鱼也好</p></div></div><div class="poke"><span>手指点点宝宝虫看看</span><i aria-hidden="true">↝</i><button class="secret-star" id="thirdStar" aria-label="这里藏着一句话">🐛</button></div><p class="secret" id="thirdSecret">其实小鱼没有老婆好</p><img loading="lazy" decoding="async" class="fish-shot" src="assets/t09.webp" data-full="assets/f09.webp" alt="我们一起喂鱼"><div class="letter-footer"><button class="letter-step prev" id="backSecond" aria-label="返回第二封信">← 上一封</button><span class="letter-index">03 / 05</span><button class="letter-step next" id="fourthLetter">下一封 &nbsp;→</button></div></section>
+    <section class="view third hidden" id="fourth"><p class="eyebrow">宝宝虫很漂亮</p><h1>第四封信 2026年9月4日</h1><div class="third-grid"><div class="third-body"><p>我开车去家里接你 阳光从树叶的缝里落在挡风玻璃上 车里放着音乐 副驾放着一袋开着的薯片 那天好像什么都在刚刚好的位置</p><p>那天在车里和部队朋友打电话 他说他很期待四爱 最近却在维修电梯 觉得人生无望 我一边听一边往前开 觉得每个人的日子都有一截在往下掉 可那天我正要去接你 连他的丧气都没能把我拽下去</p><p>你上车以后 我们开上高速 开了智驾 路很长 你拿起那袋薯片 一片一片喂我 我只要看着前面 偶尔张嘴 那种照顾很轻 不用回头也知道你在</p><p>到了安吉 我们住进万豪 服务员还算热情 可房间确实有点旧了 地毯的花纹像上一个年代留下来的 我和宝宝虫看法一致 被照顾得好 和住得舒服 有时候是两件事</p><p>高尔夫球场那天 大家好像更想认识新朋友 也更想成全叔叔和那个女生</p><p>停车场的大叔问这辆大奔多少钱 我报了个数 他点点头 没有多问</p><p>那个女生是我们介绍给叔叔朋友的 刚开始我还是蛮期待的 觉得也许真能成全一段好事 后来才知道她人不怎么样 对感情也没什么边界 还爱往不属于自己的关系里站</p><p>在安吉吃饭 我们和幼师坐一桌 那个女生也坐了过来 起初我还想好好认识一下 她一直说话 声音穿过杯子和碗 落到我们这一桌 她只相信自己相信的事 同一句话翻来覆去地说 像非要把所有人说服 我没有接话 宝宝虫也没有接 幼师看看我们 我和宝宝虫还有幼师都听累了</p><p>那天晚上去了酒吧 到酒吧的时候 我开始觉得不对 菲律宾服务员过来点单 那个女生又追问另一个服务员是不是菲律宾的 有些问题不是不能问 是问出口的时候 已经让人不舒服 驻唱刚摆好架势 我们就走了</p><p>后来好像去打了麻将 又去了幼师家里 她还是有话没话地找我 我敷衍着 这些地方都走完 我才明白自己一开始期待错了 回酒店 宝宝虫终于哭了</p><p>你一直都是这样 总是不求回报地替别人着想 我想起你那个生儿子的朋友 也想起最近的邻居朋友 你给出去的体谅 常常没有回到你身上 我不明白为什么总是你受委屈 你明明是最不希望别人为难的人</p><p>离开安吉那天 幼师妈妈带我们去洗脚 这几天还一直请我们吃那种很体面的中年漂亮饭 她虽然有些势利 但其实对我们还不错 那些不舒服 被热水和一顿顿饭慢慢按下去了一些</p><p>千岛湖是离开安吉以后去的 湖水把前面那点失望洗掉了 酒店住得很舒服 拉开窗帘 外面不是湖 是一片很安静的森林 酒店没有吃的 我们还是驱车一小时去吃蛋包饭 后来记住的是窗帘外的森林 那顿开了很久车才吃到的蛋包饭 还有水上项目里笑得停不下来的宝宝虫 那天我忽然觉得 平淡的日子也很幸福</p><p>千岛湖真的很好玩 水上项目是宝宝虫找的 特别特别好玩 老板还送了我们摩托艇 你坐上去以后 笑得像终于把那些难听的话留在了岸上 陌生人总是更容易对宝宝虫好 在俄罗斯超市 两个中国姑娘走过来夸你 她们不认识你 也不需要认识你 就愿意把一句好话给你</p><p>我想 可能陌生人不大会眼红 人太顺利的时候 连快乐都会被人拿去过秤 人心难测 可我还是愿意相信 你对别人好 不是因为你傻 是因为你本来就是这样的人</p><p>湖面很亮 你在我旁边 我只想记住这个</p><p>千岛湖真好玩呢 下次还去 我还是想和你去很多次</p><div class="poke"><span>手指点点宝宝虫看看</span><i aria-hidden="true">↝</i><button class="secret-star" id="fourthStar" aria-label="这里藏着一句话">🐛</button></div><p class="secret" id="fourthSecret">这颗星球能不能别玩精子卵子合成大傻子的游戏了</p></div></div><div class="travel"><div class="travel-track"><img loading="lazy" decoding="async" src="assets/t10.webp" data-full="assets/f10.webp" alt="开车去接你"><img loading="lazy" decoding="async" src="assets/t11.webp" data-full="assets/f11.webp" alt="安吉窗外的球场"><img loading="lazy" decoding="async" src="assets/t12.webp" data-full="assets/f12.webp" alt="一起磨茶"><img loading="lazy" decoding="async" src="assets/t13.webp" data-full="assets/f13.webp" alt="千岛湖上的你"><img loading="lazy" decoding="async" src="assets/t14.webp" data-full="assets/f14.webp" alt="千岛湖的湖面"><video class="travel-video" controls muted loop playsinline preload="none"><source src="assets/clip.mp4" type="video/mp4"></video></div><p class="travel-caption">ANJI / QIANDAO LAKE</p></div><div class="letter-footer"><button class="letter-step prev" id="backThird" aria-label="返回第三封信">← 上一封</button><span class="letter-index">04 / 05</span><button class="letter-step next" id="fifthLetter">下一封 &nbsp;→</button></div></section>
+    <section class="view third hidden" id="fifth"><p class="eyebrow">宝宝虫很漂亮</p><h1>第五封信</h1><div class="third-grid"><div class="third-body"><p>这两天我一直在惹你生气 你问我几岁了 说我巨婴 说我不懂什么话能讲什么话不能讲 我知道你不是随口骂 你是被我说到没脾气了</p><p>你说这些话的时候 我第一反应不是听 是解释 讲不通 就说我只是想在你面前撒个娇 讲着讲着 又变成你的脾气问题 每次都是这样 我先压你一下 被你指出来 再把自己说成被误会的那个人</p><p>我确实从里面拿过好处 把你压低一点 我就显得对一点 这个好处我拿了很久 还装作没拿过</p><p>你最近事情很多 每天都很满 这些我看得见 可我还是挑你最忙的时候说那些话 说完还要你回头哄我 我以前总爱跟你讲对错 其实对错没那么重要 你累不累才重要 虫虫开心才重要</p><p>昨晚你在看机票 看了很久 你说先去吉隆坡 再去新加坡 这样就不会觉得吉隆坡很破 你怕我觉得破 所以把它放在前面 你去过 你知道顺序会怎么影响一个人的心情 你天生就会替人着想</p><p>你说机票你来付 我知道你不想欠我 这次让我付 就这一趟 你负责吃 负责笑 负责在鱼尾狮前面站到腿酸 回去给你舔脚按摩</p><p>你说一月可能来宁波 我想带你去海钓 冬天海上冷 要穿厚一点 我没钓过几次 可能会晕船 也可能一条都钓不上来 到时候我们坐在船边 鱼竿半天不动 就聊天 或者什么都不说 回来路上我会抱着你 再一起找点热的吃</p><p>明年寒假后我去上班 这个是真的 以后我要是又开始那样说话 你就说一句 你又来了 我会停 然后自己离开</p><p class="apology-end">一直以来都是我不好</p><div class="runner" aria-hidden="true"><div class="runner-move"><img loading="lazy" decoding="async" src="assets/t15.webp" data-full="assets/f15.webp" alt=""></div></div></div></div><img loading="lazy" decoding="async" class="apology-shot" src="assets/t16.webp" data-full="assets/f16.webp" alt="一只在哭的小狗"><div class="poke"><span>手指点点宝宝虫看看</span><i aria-hidden="true">↝</i><button class="secret-star" id="fifthStar" aria-label="这里藏着一句话">🐛</button></div><p class="secret" id="fifthSecret">24/7</p><div class="letter-footer"><button class="letter-step prev" id="backFourth" aria-label="返回第四封信">← 上一封</button><span class="letter-index">05 / 05</span><span class="letter-step placeholder" aria-hidden="true"></span></div></section>
+    </main>
+    <footer class="bottom"><span>01.30</span><span>宝宝虫很虫</span><span>07.30</span></footer>
+  </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片预览">
+    <button class="lightbox-close" id="lightboxClose" aria-label="关闭照片预览">×</button>
+    <img loading="lazy" decoding="async" id="lightboxImage" alt="">
+  </div>
+  <script>
+    const canvas=document.getElementById('galaxy'),ctx=canvas.getContext('2d');let w,h,dpr,rotation=0,zoom=1,zoomTarget=1,warpLocked=false;
+    const warpFlash=document.getElementById('warpFlash');
+    function warpTo(fromId,toId){
+      if(warpLocked)return;warpLocked=true;
+      const from=document.getElementById(fromId),to=document.getElementById(toId);
+      warpFlash.classList.add('on');zoomTarget=2.35;
+      setTimeout(()=>{
+        from.classList.add('hidden');to.classList.remove('hidden');from.scrollTop=0;
+        document.body.classList.toggle('reading',toId!=='answer');
+        if(to.scrollTo)to.scrollTo(0,0);
+        zoomTarget=1.06;warpFlash.classList.remove('on');
+        setTimeout(()=>warpLocked=false,850);
+      },620);
+    }
+    document.getElementById('newLetter').addEventListener('click',()=>warpTo('answer','update'));
+    document.getElementById('latestJump').addEventListener('click',()=>warpTo('answer','fifth'));
+    document.getElementById('letterHome').addEventListener('click',()=>{
+      const active=[...document.querySelectorAll('.view')].find(view=>!view.classList.contains('hidden'));
+      if(!active||active.id==='answer')return;
+      const video=active.querySelector('video');if(video)video.pause();
+      document.querySelectorAll('.view').forEach(view=>view.classList.add('hidden'));
+      const home=document.getElementById('answer');
+      home.classList.remove('hidden');home.scrollTop=0;
+      document.body.classList.remove('reading');
+      warpFlash.classList.remove('on');zoomTarget=1;warpLocked=false;
+    });
+
+    document.getElementById('secondLetter').addEventListener('click',()=>warpTo('update','second'));
+    document.getElementById('backFirst').addEventListener('click',()=>{document.getElementById('second').classList.add('hidden');document.getElementById('update').classList.remove('hidden')});
+    document.getElementById('secretStar').addEventListener('click',()=>{document.getElementById('secret').classList.toggle('show');document.getElementById('secretStar').textContent='🦋'});
+    document.getElementById('thirdLetter').addEventListener('click',()=>warpTo('second','third'));
+    document.getElementById('backSecond').addEventListener('click',()=>{document.getElementById('third').classList.add('hidden');document.getElementById('second').classList.remove('hidden')});
+    document.getElementById('thirdStar').addEventListener('click',()=>{document.getElementById('thirdSecret').classList.toggle('show');document.getElementById('thirdStar').textContent='🦋'});
+    document.getElementById('fourthLetter').addEventListener('click',()=>warpTo('third','fourth'));
+    document.getElementById('fifthLetter').addEventListener('click',()=>{document.querySelector('#fourth video').pause();warpTo('fourth','fifth')});
+    document.getElementById('backFourth').addEventListener('click',()=>{document.getElementById('fifth').classList.add('hidden');document.getElementById('fourth').classList.remove('hidden')});
+    document.getElementById('fifthStar').addEventListener('click',()=>{document.getElementById('fifthSecret').classList.toggle('show');document.getElementById('fifthStar').textContent='🦋'});
+    document.getElementById('backThird').addEventListener('click',()=>{document.querySelector('#fourth video').pause();document.getElementById('fourth').classList.add('hidden');document.getElementById('third').classList.remove('hidden')});
+    document.getElementById('fourthStar').addEventListener('click',()=>{document.getElementById('fourthSecret').classList.toggle('show');document.getElementById('fourthStar').textContent='🦋'});
+    const stars=[];
+    function normal(){return Math.sqrt(-2*Math.log(Math.random()))*Math.cos(2*Math.PI*Math.random())}
+    function rnd(a,b){return a+Math.random()*(b-a)}
+    const TINTS=[[255,255,255],[214,228,255],[184,204,255],[255,242,224],[255,222,190]];
+    function makeSprite(color,size){
+      const c=document.createElement('canvas');c.width=c.height=size;const g=c.getContext('2d');
+      const grd=g.createRadialGradient(size/2,size/2,0,size/2,size/2,size/2);
+      grd.addColorStop(0,'rgba('+color[0]+','+color[1]+','+color[2]+',1)');
+      grd.addColorStop(.13,'rgba('+color[0]+','+color[1]+','+color[2]+',.6)');
+      grd.addColorStop(.4,'rgba('+color[0]+','+color[1]+','+color[2]+',.12)');
+      grd.addColorStop(1,'rgba('+color[0]+','+color[1]+','+color[2]+',0)');
+      g.fillStyle=grd;g.fillRect(0,0,size,size);return c;
+    }
+    const SPRITE=TINTS.map(c=>makeSprite(c,64));
+
+    /* 前景：缓慢自转的星系盘 */
+    for(let i=0;i<1500;i++){
+      const arm=i%4,r=Math.pow(Math.random(),.62)*450+8,m=Math.pow(Math.random(),2.8);
+      stars.push({
+        r,a:arm*Math.PI/2+r*.017+normal()*.16,
+        x:normal()*(8+r*.05),y:normal()*(8+r*.05),z:normal()*10,
+        size:.34+m*1.5,base:.15+m*.85,m:m,
+        t:(i%11===0?3:(i%7===0?2:(i%5===0?1:0))),
+        ph:Math.random()*6.283
+      });
+    }
+
+    /* 背景层：星海 + 银河带 + 星云，预渲染一次 */
+    const bg=document.createElement('canvas');
+    function buildBg(){
+      bg.width=Math.max(1,Math.round(w*dpr));bg.height=Math.max(1,Math.round(h*dpr));
+      const g=bg.getContext('2d');
+      g.setTransform(dpr,0,0,dpr,0,0);
+      g.clearRect(0,0,w,h);
+      const mobile=w<600,cx=mobile?w*.53:w*.65,cy=h*.49;
+      const ang=-0.52,ca=Math.cos(ang),sa=Math.sin(ang);
+      const len=Math.max(w,h)*1.9,span=Math.min(w,h)*(mobile?.42:.30);
+      const put=(x,y,size,alpha,color)=>{
+        if(x<-4||x>w+4||y<-4||y>h+4)return;
+        g.fillStyle='rgba('+color+','+alpha.toFixed(3)+')';
+        g.fillRect(x,y,size,size);
+      };
+      /* 星云气团 */
+      const nebula=[
+        [cx-ca*len*.16, cy-sa*len*.16, span*2.5, '118,140,224', .15],
+        [cx+ca*len*.10, cy+sa*len*.10, span*1.9, '176,142,198', .11],
+        [cx+ca*len*.30, cy+sa*len*.30, span*1.5, '255,206,176', .075],
+        [cx-ca*len*.34, cy-sa*len*.34, span*1.7, '130,166,222', .09]
+      ];
+      for(const n of nebula){
+        const grd=g.createRadialGradient(n[0],n[1],0,n[0],n[1],Math.max(40,n[2]));
+        grd.addColorStop(0,'rgba('+n[3]+','+n[4]+')');
+        grd.addColorStop(.45,'rgba('+n[3]+','+(n[4]*.34).toFixed(3)+')');
+        grd.addColorStop(1,'rgba('+n[3]+',0)');
+        g.fillStyle=grd;
+        g.beginPath();g.arc(n[0],n[1],Math.max(40,n[2]),0,6.2832);g.fill();
+      }
+      /* 银河带：斜穿画面的密集微星 */
+      const BAND=Math.min(w,h)*1.55|0;
+      for(let i=0;i<BAND;i++){
+        const t=Math.random()-.5;
+        const off=normal()*span*.42*(1-Math.abs(t)*.9);
+        const x=cx+ca*t*len-sa*off, y=cy+sa*t*len+ca*off;
+        const edge=1-Math.abs(t)*1.5;
+        const alpha=rnd(.13,.46)*Math.max(.16,edge);
+        put(x,y,rnd(.7,1.5),alpha,i%17===0?'255,238,214':(i%7===0?'198,212,255':'230,236,255'));
+      }
+      /* 全场远处微星 */
+      const FIELD=Math.min(9000,Math.round(w*h/120));
+      for(let i=0;i<FIELD;i++){
+        put(Math.random()*w,Math.random()*h,rnd(.5,1.2),rnd(.08,.34),i%23===0?'255,228,200':'214,224,250');
+      }
+      /* 少量亮星，带光芒 */
+      for(let i=0;i<110;i++){
+        const t=Math.random()-.5,off=normal()*span*.5;
+        const x=cx+ca*t*len-sa*off, y=cy+sa*t*len+ca*off;
+        if(x<0||x>w||y<0||y>h)continue;
+        const d=rnd(6,17),a=rnd(.62,1),spr=SPRITE[i%5];
+        g.globalAlpha=a;g.drawImage(spr,x-d/2,y-d/2,d,d);g.globalAlpha=1;
+        if(a>.72){
+          g.strokeStyle='rgba(226,234,255,'+(a*.32).toFixed(2)+')';g.lineWidth=.7;
+          g.beginPath();g.moveTo(x-d*.95,y);g.lineTo(x+d*.95,y);
+          g.moveTo(x,y-d*.95);g.lineTo(x,y+d*.95);g.stroke();
+        }
+      }
+    }
+
+    function resize(){dpr=Math.min(devicePixelRatio,1.6);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);buildBg()}
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let tick=0;
+    function draw(){
+      tick+=1;
+      ctx.clearRect(0,0,w,h);
+      const mobile=w<600,cx=mobile?w*.53:w*.65,cy=h*.49;
+      const s=Math.min(w,h)*(mobile?.0016:.00145)*zoom;
+      zoom+=(zoomTarget-zoom)*.055;
+      const stretch=Math.max(0,Math.min(28,(zoom-1)*18));
+      /* 背景星海跟随缩放 */
+      const bw=w*zoom,bh=h*zoom;
+      ctx.drawImage(bg,cx-cx*zoom,cy-cy*zoom,bw,bh);
+      /* 前景恒星 */
+      for(const p of stars){
+        const a=p.a+rotation*(.5+70/(p.r+70));
+        const x=cx+(Math.cos(a)*p.r+p.x)*s,y=cy+(Math.sin(a)*p.r+p.y)*s*.46+p.z;
+        if(x<-40||x>w+40||y<-40||y>h+40)continue;
+        const tw=reduce?1:(.86+.14*Math.sin(tick*.012+p.ph));
+        const alpha=p.base*tw;
+        if(stretch>1){
+          const dx=x-cx,dy=y-cy,d=Math.hypot(dx,dy)||1;
+          ctx.beginPath();ctx.moveTo(x-dx/d*stretch,y-dy/d*stretch);ctx.lineTo(x,y);
+          ctx.strokeStyle='rgba(210,220,245,'+(alpha*.5)+')';ctx.lineWidth=Math.max(.5,p.size*.5);ctx.stroke();
+        }
+        if(p.m>.9){
+          const d=Math.max(6,p.size*9);
+          ctx.globalAlpha=Math.min(1,alpha*1.05);
+          ctx.drawImage(SPRITE[p.t],x-d/2,y-d/2,d,d);
+          ctx.globalAlpha=1;
+        }else if(p.m>.42){
+          ctx.fillStyle='rgba('+TINTS[p.t][0]+','+TINTS[p.t][1]+','+TINTS[p.t][2]+','+alpha+')';
+          ctx.beginPath();ctx.arc(x,y,p.size*.7,0,6.2832);ctx.fill();
+        }else{
+          ctx.fillStyle='rgba(226,232,248,'+alpha+')';
+          ctx.fillRect(x,y,p.size,p.size);
+        }
+      }
+      rotation+=.00045;requestAnimationFrame(draw)
+    }
+    const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');
+    function closeLightbox(){lightbox.classList.remove('open');lightboxImage.removeAttribute('src')}
+    document.querySelectorAll('.portrait,.chat-shot,.fish-shot,.travel-track img').forEach(img=>{
+      img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label','点击放大照片');
+      const open=()=>{lightboxImage.src=img.src;lightboxImage.alt=img.alt;lightbox.classList.add('open');const full=img.dataset.full;if(full){const pre=new Image();pre.onload=()=>{if(lightbox.classList.contains('open'))lightboxImage.src=full};pre.src=full}};
+      img.addEventListener('click',open);
+      img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+    });
+    document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+    lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+    addEventListener('keydown',e=>{if(e.key==='Escape'&&lightbox.classList.contains('open'))closeLightbox()});
+    addEventListener('resize',resize);resize();draw();
+  </script>
+</body>
+</html>
