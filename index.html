@@ -239,6 +239,12 @@
       g.setTransform(dpr,0,0,dpr,0,0);
       g.clearRect(0,0,w,h);
       const mobile=w<600,cx=mobile?w*.53:w*.65,cy=h*.49;
+      g.fillStyle='rgb(6,8,16)';g.fillRect(0,0,w,h);
+      const halo=g.createRadialGradient(cx,cy,0,cx,cy,Math.max(w,h)*.78);
+      halo.addColorStop(0,'rgba(26,32,62,.55)');
+      halo.addColorStop(.55,'rgba(14,17,34,.35)');
+      halo.addColorStop(1,'rgba(0,0,0,0)');
+      g.fillStyle=halo;g.fillRect(0,0,w,h);
       const ang=-0.52,ca=Math.cos(ang),sa=Math.sin(ang);
       const len=Math.max(w,h)*1.9,span=Math.min(w,h)*(mobile?.42:.30);
       const put=(x,y,size,alpha,color)=>{
@@ -248,10 +254,10 @@
       };
       /* 星云气团 */
       const nebula=[
-        [cx-ca*len*.16, cy-sa*len*.16, span*2.5, '118,140,224', .15],
-        [cx+ca*len*.10, cy+sa*len*.10, span*1.9, '176,142,198', .11],
-        [cx+ca*len*.30, cy+sa*len*.30, span*1.5, '255,206,176', .075],
-        [cx-ca*len*.34, cy-sa*len*.34, span*1.7, '130,166,222', .09]
+        [cx-ca*len*.16, cy-sa*len*.16, span*2.6, '104,126,214', .13],
+        [cx+ca*len*.10, cy+sa*len*.10, span*2.0, '148,130,206', .085],
+        [cx+ca*len*.30, cy+sa*len*.30, span*1.6, '120,150,225', .055],
+        [cx-ca*len*.34, cy-sa*len*.34, span*1.8, '112,148,220', .07]
       ];
       for(const n of nebula){
         const grd=g.createRadialGradient(n[0],n[1],0,n[0],n[1],Math.max(40,n[2]));
@@ -262,22 +268,22 @@
         g.beginPath();g.arc(n[0],n[1],Math.max(40,n[2]),0,6.2832);g.fill();
       }
       /* 银河带：斜穿画面的密集微星 */
-      const BAND=Math.min(w,h)*1.55|0;
+      const BAND=Math.min(w,h)*1.05|0;
       for(let i=0;i<BAND;i++){
         const t=Math.random()-.5;
         const off=normal()*span*.42*(1-Math.abs(t)*.9);
         const x=cx+ca*t*len-sa*off, y=cy+sa*t*len+ca*off;
         const edge=1-Math.abs(t)*1.5;
-        const alpha=rnd(.13,.46)*Math.max(.16,edge);
-        put(x,y,rnd(.7,1.5),alpha,i%17===0?'255,238,214':(i%7===0?'198,212,255':'230,236,255'));
+        const alpha=rnd(.10,.34)*Math.max(.16,edge);
+        put(x,y,rnd(.6,1.25),alpha,i%13===0?'202,216,255':'228,235,253');
       }
       /* 全场远处微星 */
-      const FIELD=Math.min(9000,Math.round(w*h/120));
+      const FIELD=Math.min(6800,Math.round(w*h/170));
       for(let i=0;i<FIELD;i++){
-        put(Math.random()*w,Math.random()*h,rnd(.5,1.2),rnd(.08,.34),i%23===0?'255,228,200':'214,224,250');
+        put(Math.random()*w,Math.random()*h,rnd(.5,1.15),rnd(.18,.55),i%19===0?'196,212,255':'226,233,252');
       }
       /* 少量亮星，带光芒 */
-      for(let i=0;i<110;i++){
+      for(let i=0;i<72;i++){
         const t=Math.random()-.5,off=normal()*span*.5;
         const x=cx+ca*t*len-sa*off, y=cy+sa*t*len+ca*off;
         if(x<0||x>w||y<0||y>h)continue;
