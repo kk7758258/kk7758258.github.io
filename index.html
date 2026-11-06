@@ -183,7 +183,11 @@
       const active=[...document.querySelectorAll('.view')].find(view=>!view.classList.contains('hidden'));
       if(!active||active.id==='answer')return;
       const video=active.querySelector('video');if(video)video.pause();
-      warpTo(active.id,'answer');
+      document.querySelectorAll('.view').forEach(view=>view.classList.add('hidden'));
+      const home=document.getElementById('answer');
+      home.classList.remove('hidden');home.scrollTop=0;
+      document.body.classList.remove('reading');
+      warpFlash.classList.remove('on');zoomTarget=1;warpLocked=false;
     });
 
     document.getElementById('secondLetter').addEventListener('click',()=>warpTo('update','second'));
