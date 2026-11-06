@@ -12,8 +12,8 @@
   <meta name="application-name" content="7758258 星">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&family=Noto+Serif+SC:wght@300;400&display=swap');
-    *{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;background:#050608}body{color:#eceef2;font-family:'DM Sans','Noto Serif SC',serif;overflow:hidden}button{font:inherit;color:inherit;cursor:pointer}#galaxy{position:fixed;inset:0;width:100%;height:100%;opacity:.7}#galaxy{transition:opacity .8s ease}
-    body.reading #galaxy{opacity:.44}
+    *{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;background:#050608}body{color:#eceef2;font-family:'DM Sans','Noto Serif SC',serif;overflow:hidden}button{font:inherit;color:inherit;cursor:pointer}#galaxyBg{position:fixed;left:-14%;top:-14%;width:128%;height:128%;transform-origin:50% 50%;will-change:transform;opacity:1;backface-visibility:hidden;transition:opacity .8s ease}#galaxy{position:fixed;inset:0;width:100%;height:100%;opacity:.9;transition:opacity .8s ease}
+    body.reading #galaxyBg{opacity:.74}body.reading #galaxy{opacity:.56}
 .veil{position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 62% 48%,rgba(8,6,5,0) 26%,rgba(8,6,5,.34) 64%,rgba(8,6,5,.82) 100%)}
     .warp-flash{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .55s ease;background:radial-gradient(circle at 65% 49%,rgba(211,220,255,.2),rgba(126,139,197,.04) 22%,transparent 40%)}.warp-flash.on{opacity:1}.page{position:relative;z-index:2;height:100svh;padding:28px 5%;display:flex;flex-direction:column}.top,.bottom{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.25em;color:#686d77}.top i{display:inline-block;width:4px;height:4px;border:1px solid #a4aaba;border-radius:50%;margin-right:10px;vertical-align:2px}.bottom{color:#515660}.center{flex:1;display:grid;place-items:center;text-align:center}.view{grid-area:1/1;transition:opacity 1s,transform 1s,visibility 1s}.view.hidden{opacity:0;transform:translateY(-10px);visibility:hidden;pointer-events:none;transition:none}.view.leaving{opacity:0!important;transform:translateY(-6px) scale(.985)!important;transition:opacity .3s ease,transform .45s ease!important}.eyebrow{font-size:8px;letter-spacing:.38em;color:#696f7b;margin-bottom:25px}.view h1{font-family:'Noto Serif SC',serif;font-weight:400;font-size:clamp(29px,4vw,50px);line-height:1.7;letter-spacing:.035em}.open{margin-top:38px;padding:12px 2px;border:0;border-bottom:1px solid #4b505a;background:none;font-size:10px;letter-spacing:.22em;color:#a9adb6;transition:.3s}.open:hover{border-color:#e5e7ed;color:#fff}.answer h1{font-size:clamp(35px,5vw,62px)}.answer h1 span{display:block;font-size:.52em;margin-top:14px;color:#c5c8d0}.answer p{margin-top:28px;color:#606670;font-size:9px;letter-spacing:.25em}.covers{display:flex;justify-content:center;gap:7px;margin:27px auto 0;width:min(368px,100%)}.portrait{display:block;flex:0 0 auto;width:calc((100% - 28px)/5);aspect-ratio:68/84;object-fit:cover;object-position:center 30%;margin:0;border-radius:2px;filter:grayscale(.2);opacity:.9;cursor:zoom-in;transition:opacity .3s,transform .3s}.portrait:hover{opacity:1;transform:translateY(-2px)}.fish-shot,.chat-shot{cursor:zoom-in}.lightbox{position:fixed;inset:0;z-index:80;background:rgba(3,4,6,.95);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}.lightbox.open{opacity:1;visibility:visible}.lightbox img{max-width:92vw;max-height:86svh;object-fit:contain;border-radius:2px;transform:scale(.97);transition:transform .35s}.lightbox.open img{transform:scale(1)}.lightbox-close{position:absolute;top:18px;right:22px;background:none;border:1px solid #454a54;border-radius:50%;width:36px;height:36px;color:#b7bbc4;font-size:20px;line-height:1;cursor:pointer}.lightbox-close:hover{border-color:#b7bbc4;color:#fff}.planet-id{color:#9ba1ac!important;font-size:10px!important;letter-spacing:.16em!important}.planet-id span{display:block;margin-top:7px;color:#4f5560;font-size:8px;letter-spacing:.24em}.history{display:flex;gap:42px;margin-top:30px;text-align:left;color:#646a75;font-family:'Noto Serif SC',serif;font-size:10px;line-height:2}.history div{max-width:245px}.history time{display:block;margin-bottom:5px;color:#9da2ad;font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.15em}.history a{color:inherit;text-decoration:none}.history a:hover{color:#c9cdd5}.history b{display:block;color:#b5bac4;font-weight:400}.new-letter{margin-top:24px;background:rgba(224,184,200,.06);border:1px solid #b88fa1;border-radius:4px;padding:15px 26px;color:#f0c4d5;font-family:'Noto Serif SC',serif;font-size:15px;letter-spacing:.16em;box-shadow:0 0 24px rgba(224,184,200,.06)}.new-letter small{display:block;border:0;margin-top:14px;color:#b895a4;font-family:'Noto Serif SC',serif;font-size:10px;letter-spacing:.1em}.avatars{display:flex;justify-content:center;gap:14px;margin-top:35px}.avatars img{width:min(180px,32vw);aspect-ratio:1;object-fit:cover;border-radius:3px}.letter-note{margin-top:22px!important;color:#888e99!important;letter-spacing:.12em!important}.back{margin-top:36px;background:none;border:0;color:#656b76;font-size:9px;letter-spacing:.15em}.next-letter{margin-top:30px;padding:12px 22px;font-size:12px}.dream{max-height:74svh;overflow-y:auto;padding:22px 12px;scrollbar-width:none}.dream::-webkit-scrollbar{display:none}.dream h1{font-size:clamp(26px,3.5vw,42px)}.dream-text{max-width:540px;margin:28px auto 0;text-align:left;font-family:'Noto Serif SC',serif;font-size:14px;line-height:2.1;color:#c3c7cf}.dream-text strong{color:#efc2d2;font-weight:400}.chat-shot{display:block;width:min(300px,78vw);margin:28px auto 0;border-radius:5px;opacity:1}.poke{display:flex;align-items:center;justify-content:center;gap:6px;margin:20px auto 0}.poke span{font-family:'Noto Serif SC',serif;font-size:9px;letter-spacing:.12em;color:#6f747e}.poke i{font-style:normal;font-size:18px;color:#5b606a;transform:translateY(3px)}.secret-star{display:block;margin:0;background:none;border:0;padding:4px;color:#7f8490;font-size:17px;transition:.4s}.secret-star:hover{color:#efc2d2;text-shadow:0 0 12px #efc2d2}.secret{max-width:540px;margin:6px auto 0!important;color:#8f95a0!important;font-family:'Noto Serif SC',serif;font-size:10px!important;line-height:1.9!important;letter-spacing:.05em!important;opacity:0;transform:translateY(4px);transition:.5s}.secret.show{opacity:1;transform:none}.third{width:100%;max-height:78svh;overflow-y:auto;padding:26px 10px;scrollbar-width:none}.third::-webkit-scrollbar{display:none}.third h1{font-size:clamp(24px,3.5vw,40px)}.third-grid{max-width:680px;margin:32px auto 0;text-align:left}.fish-shot{display:block;width:min(360px,100%);aspect-ratio:4/3;object-fit:cover;border-radius:4px;opacity:1;margin:36px auto 0}.third-body{font-family:'Noto Serif SC',serif;font-size:12px;line-height:2.15;color:#aeb3bd;letter-spacing:.035em;text-align:left}.third-body p+p{margin-top:17px}.third .poke{margin-top:28px}.apology-shot{display:block;width:min(212px,54%);margin:32px auto 0;border-radius:4px;box-shadow:0 6px 40px rgba(255,240,235,.07)}#fifth{padding-left:18px;padding-right:18px}@media(min-width:700px){.apology-shot{width:250px}}.apology-end{margin-top:30px!important}.apology-sign{color:#e0b8c8!important;letter-spacing:.06em!important}.travel{width:min(680px,100%);margin:34px auto 0}.travel-track{display:flex;gap:7px;overflow-x:auto;padding-bottom:7px;scroll-snap-type:x mandatory;scrollbar-width:none}.travel-track::-webkit-scrollbar{display:none}.travel-track img{flex:0 0 150px;height:188px;object-fit:cover;border-radius:3px;opacity:.88;scroll-snap-align:start;cursor:zoom-in;transition:opacity .3s}.travel-track img:hover{opacity:1}.travel-video{flex:0 0 106px;height:188px;object-fit:cover;border-radius:3px;background:#000;scroll-snap-align:start}.travel-caption{margin-top:9px;font-size:8px;letter-spacing:.22em;color:#4e535d;text-align:left}.closing{margin-top:32px!important;color:#8b909a!important;letter-spacing:.08em!important;font-family:'Noto Serif SC',serif;font-size:11px!important}
     @media(max-width:600px){.warp-flash{background:radial-gradient(circle at 53% 49%,rgba(211,220,255,.18),rgba(126,139,197,.035) 24%,transparent 46%)}.page{padding:24px 7%}.top span:last-child{display:none}.bottom{font-size:8px}.view h1{font-size:29px}.answer h1{font-size:38px}.answer h1 span{font-size:22px;line-height:1.8}.history{flex-direction:column;gap:20px;width:min(300px,100%);margin:22px auto 0;text-align:left;font-size:9px}.history div{max-width:none}.history time{display:block;margin:0 0 5px;letter-spacing:.18em}.history b{margin-bottom:4px}.closing{margin-top:22px!important}.third{padding:18px 4px}.third-grid{margin-top:24px}.fish-shot{width:min(300px,90%);margin:28px auto 0;aspect-ratio:4/3}.third-body{font-size:11.5px;line-height:2}.third h1{font-size:26px}#galaxy{opacity:.58}.latest{margin-top:10px;font-size:8.5px;letter-spacing:.14em}}
@@ -64,9 +64,14 @@
     .latest{justify-content:center;min-height:44px;margin:0;padding:0 16px;border:1px solid rgba(242,240,236,.22);border-radius:0;background:transparent;color:#a9a6a2;font-size:8px;letter-spacing:.14em;transition:color .3s,border-color .3s,background .3s}
     .latest:hover{border-color:rgba(242,240,236,.55);background:rgba(255,255,255,.035);color:#fff}
     .latest i{background:var(--rose);box-shadow:0 0 8px rgba(199,162,174,.7)}
-    .answer .covers{grid-area:covers;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;width:100%;height:min(64svh,650px);margin:0;align-self:center;overflow:hidden}
-    .answer .portrait{width:100%;height:100%;aspect-ratio:auto;border-radius:0;filter:grayscale(.18) saturate(.85) contrast(1.03);opacity:.88;object-position:center 35%;transition:opacity .6s,filter .6s,transform .9s cubic-bezier(.22,.61,.36,1)}
-    .answer .portrait:hover{opacity:1;filter:grayscale(0) saturate(1) contrast(1);transform:scale(1.018)}
+    .answer .covers{grid-area:covers;box-shadow:0 0 130px -34px rgba(226,170,96,.3);display:grid;grid-template-columns:1.34fr 1fr 1fr 1fr 1fr;gap:6px;width:100%;height:min(64svh,650px);margin:0;align-self:center;overflow:hidden}
+    .answer .portrait{width:100%;height:100%;aspect-ratio:auto;border-radius:0;object-position:center 35%;opacity:.84;transition:opacity .5s,transform .6s cubic-bezier(.22,.61,.36,1)}
+    .answer .portrait:first-child{opacity:1;object-position:center 32%;}
+    .answer .portrait:nth-child(2){opacity:.9}
+    .answer .portrait:nth-child(3){opacity:.84}
+    .answer .portrait:nth-child(4){opacity:.77}
+    .answer .portrait:nth-child(5){opacity:.7}
+    .answer .portrait:hover{opacity:1;transform:scale(1.018)}
     .answer .history{grid-area:history;display:grid;grid-template-columns:1fr 1fr;gap:0;width:100%;margin:0;padding-top:17px;border-top:1px solid var(--hair);text-align:left;font-size:9px;line-height:1.9;color:#6d6e73}
     .answer .history>div{display:grid;grid-template-columns:54px minmax(0,1fr);gap:18px;max-width:none;padding-right:44px}
     .answer .history time{display:block;margin:2px 0 0;color:#929095;font-size:8px;letter-spacing:.16em}
@@ -119,7 +124,7 @@
       .letter-index{font-size:7px;letter-spacing:.18em}
       .answer .covers{display:flex;justify-content:flex-start;width:calc(100% + 12vw);height:38svh;min-height:260px;max-height:330px;margin:19px 0 0 -6vw;padding:0 6vw;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;gap:7px}
       .answer .covers::-webkit-scrollbar{display:none}
-      .answer .portrait{flex:0 0 66vw;width:66vw;height:100%;scroll-snap-align:start;opacity:.92;filter:none}
+      .answer .portrait{flex:0 0 66vw;width:66vw;height:100%;scroll-snap-align:start;opacity:1}
       .answer .history{display:block;margin-top:24px;padding-top:15px;font-size:9px}
       .answer .history a{display:block;white-space:normal;overflow-wrap:anywhere}
       .answer .history>div{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:0;max-width:none}
@@ -135,7 +140,7 @@
   </style>
 </head>
 <body>
-  <canvas id="galaxy"></canvas><div class="veil"></div><div class="warp-flash" id="warpFlash"></div>
+  <canvas id="galaxyBg" aria-hidden="true"></canvas><canvas id="galaxy"></canvas><div class="veil"></div><div class="warp-flash" id="warpFlash"></div>
   <div class="page">
     <header class="top"><span><i></i>宝宝虫很漂亮</span><button class="home-pill" id="letterHome" type="button" aria-label="返回 7758258 星">← 7758258 星</button></header>
     <main class="center">
@@ -151,7 +156,7 @@
               <button class="latest" id="latestJump"><i></i>最近更新 第五封 · 11.05</button>
             </div>
           </div>
-          <div class="covers"><img class="portrait" fetchpriority="high" src="assets/t01.webp" srcset="assets/t01.webp 340w, assets/f01.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f01.webp" alt="宝宝虫"><img class="portrait" src="assets/t02.webp" srcset="assets/t02.webp 340w, assets/f02.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f02.webp" alt="宝宝虫侧脸"><img class="portrait" src="assets/t03.webp" srcset="assets/t03.webp 340w, assets/f03.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f03.webp" alt="摸摸宝宝虫的头"><img class="portrait" src="assets/t04.webp" srcset="assets/t04.webp 340w, assets/f04.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f04.webp" alt="宝宝虫在风铃下"><img class="portrait" src="assets/t05.webp" srcset="assets/t05.webp 340w, assets/f05.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f05.webp" alt="宝宝虫在楼梯旁"></div>
+          <div class="covers"><img class="portrait" fetchpriority="high" src="assets/t05.webp" srcset="assets/t05.webp 340w, assets/f05.webp 1100w" sizes="(max-width:900px) 66vw, 14vw" data-full="assets/f05.webp" alt="宝宝虫在金色大厅"><img class="portrait" src="assets/t01.webp" srcset="assets/t01.webp 340w, assets/f01.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f01.webp" alt="宝宝虫"><img class="portrait" src="assets/t02.webp" srcset="assets/t02.webp 340w, assets/f02.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f02.webp" alt="宝宝虫侧脸"><img class="portrait" src="assets/t03.webp" srcset="assets/t03.webp 340w, assets/f03.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f03.webp" alt="摸摸宝宝虫的头"><img class="portrait" src="assets/t04.webp" srcset="assets/t04.webp 340w, assets/f04.webp 1100w" sizes="(max-width:900px) 66vw, 12vw" data-full="assets/f04.webp" alt="宝宝虫在风铃下"></div>
           <div class="history"><div><time>01.30</time><a href="https://www.peopleapp.com/rmharticle/30025849109" target="_blank" rel="noopener"><b>世界曾经很吵</b>1969年的这一天，披头士在伦敦屋顶唱完最后一次。很久以后，这一天成了你的生日。</a></div><div><time>07.30</time><a href="https://www.cnsa.gov.cn/n6758823/n6759010/c6807048/content.html" target="_blank" rel="noopener"><b>人类曾经走得很远</b>1971年的这一天，阿波罗15号登陆月球。五十五年后，我们在一起。</a></div></div>
         </div>
       </section>
@@ -168,7 +173,9 @@
     <img loading="lazy" decoding="async" id="lightboxImage" alt="">
   </div>
   <script>
+    const bgc=document.getElementById('galaxyBg'),bgx=bgc.getContext('2d');
     const canvas=document.getElementById('galaxy'),ctx=canvas.getContext('2d');let w,h,dpr,rotation=0,zoom=1,zoomTarget=1,warpLocked=false;
+    const SKY=1.28;
     const warpFlash=document.getElementById('warpFlash');
     function warpTo(fromId,toId){
       if(warpLocked)return;warpLocked=true;
@@ -234,17 +241,17 @@
       });
     }
 
-    /* 背景层：星海 + 银河带 + 星云，预渲染一次 */
-    const bg=document.createElement('canvas');
+    /* 背景层：星海 + 银河带 + 星云，只画一次，之后交给合成层位移 */
     function buildBg(){
-      bg.width=Math.max(1,Math.round(w*dpr));bg.height=Math.max(1,Math.round(h*dpr));
-      const g=bg.getContext('2d');
-      g.setTransform(dpr,0,0,dpr,0,0);
-      g.clearRect(0,0,w,h);
+      bgc.width=Math.max(1,Math.round(w*SKY*dpr));bgc.height=Math.max(1,Math.round(h*SKY*dpr));
+      const g=bgx;
+      const ox=(w*SKY-w)/2,oy=(h*SKY-h)/2;
+      g.setTransform(dpr,0,0,dpr,ox*dpr,oy*dpr);
+      g.clearRect(-w*SKY,-h*SKY,w*SKY*3,h*SKY*3);
+      g.fillStyle='rgb(9,7,5)';g.fillRect(-w*SKY,-h*SKY,w*SKY*3,h*SKY*3);
       const mobile=w<600,cx=mobile?w*.53:w*.65,cy=h*.49;
-      g.fillStyle='rgb(9,7,5)';g.fillRect(0,0,w,h);
       const halo=g.createRadialGradient(cx,cy,0,cx,cy,Math.max(w,h)*.78);
-      halo.addColorStop(0,'rgba(52,38,22,.55)');
+      halo.addColorStop(0,'rgba(58,42,24,.62)');
       halo.addColorStop(.55,'rgba(28,20,11,.35)');
       halo.addColorStop(1,'rgba(0,0,0,0)');
       g.fillStyle=halo;g.fillRect(0,0,w,h);
@@ -296,7 +303,7 @@
         const t=Math.random()-.5,off=normal()*span*.5;
         const x=cx+ca*t*len-sa*off, y=cy+sa*t*len+ca*off;
         if(x<0||x>w||y<0||y>h)continue;
-        const d=rnd(7,20),a=rnd(.68,1),spr=SPRITE[i%5];
+        const d=rnd(6,15),a=rnd(.68,1),spr=SPRITE[i%5];
         g.globalAlpha=a;g.drawImage(spr,x-d/2,y-d/2,d,d);g.globalAlpha=1;
         if(a>.72){
           g.strokeStyle='rgba(226,234,255,'+(a*.32).toFixed(2)+')';g.lineWidth=.7;
@@ -306,23 +313,32 @@
       }
     }
 
-    function resize(){dpr=Math.min(devicePixelRatio,1.6);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);buildBg()}
+    function resize(){
+      dpr=Math.min(devicePixelRatio,innerWidth<600?2:1.6);w=innerWidth;h=innerHeight;
+      canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+      buildBg();
+    }
     let starShift=0,starShiftTarget=0,bgScale=1,bgScaleTarget=1;
     const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let tick=0;
-    function draw(){
-      tick+=1;
+    let tick=0,lastT=0,bgStyle='';
+    let running=true;
+    function draw(now){
+      if(!running)return;
+      now=now||performance.now();
+      const dt=lastT?Math.min(50,now-lastT):16.7;lastT=now;
+      const fr=dt/16.7;
+      const ease=k=>1-Math.pow(1-k,fr);
+      tick+=fr;
+      zoom+=(zoomTarget-zoom)*ease(.07);
+      starShift+=(starShiftTarget-starShift)*ease(.22);
+      bgScale+=(bgScaleTarget-bgScale)*ease(.18);
+      const bz=zoom*bgScale;
+      const next='translate3d(0,'+starShift.toFixed(2)+'px,0) scale('+bz.toFixed(4)+')';
+      if(next!==bgStyle){bgc.style.transform=next;bgStyle=next}
       ctx.clearRect(0,0,w,h);
       const mobile=w<600,cx=mobile?w*.53:w*.65,cy=h*.49;
       const s=Math.min(w,h)*(mobile?.0016:.00145)*zoom;
-      zoom+=(zoomTarget-zoom)*.055;
       const stretch=Math.max(0,Math.min(28,(zoom-1)*18));
-      /* 背景星海跟随缩放 */
-      const bw=w*zoom,bh=h*zoom;
-      starShift+=(starShiftTarget-starShift)*.075;
-      bgScale+=(bgScaleTarget-bgScale)*.07;
-      const bz=zoom*bgScale;
-      ctx.drawImage(bg,cx-cx*bz,cy-cy*bz+starShift,w*bz,h*bz);
       /* 前景恒星 */
       for(const p of stars){
         const a=p.a+rotation*(.5+70/(p.r+70));
@@ -336,8 +352,8 @@
           ctx.strokeStyle='rgba(210,220,245,'+(alpha*.5)+')';ctx.lineWidth=Math.max(.5,p.size*.5);ctx.stroke();
         }
         if(p.m>.9){
-          const d=Math.max(6,p.size*9);
-          ctx.globalAlpha=Math.min(1,alpha*1.05);
+          const d=Math.max(5,p.size*7);
+          ctx.globalAlpha=Math.min(1,alpha*1.15);
           ctx.drawImage(SPRITE[p.t],x-d/2,y-d/2,d,d);
           ctx.globalAlpha=1;
         }else if(p.m>.42){
@@ -348,7 +364,7 @@
           ctx.fillRect(x,y,p.size,p.size);
         }
       }
-      rotation+=.00045;requestAnimationFrame(draw)
+      rotation+=.00045*fr;requestAnimationFrame(draw)
     }
     const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');
     function closeLightbox(){lightbox.classList.remove('open');lightboxImage.removeAttribute('src')}
@@ -386,7 +402,7 @@
           requestAnimationFrame(()=>{
             ticking=false;
             const st=v.scrollTop||0;
-            starShiftTarget=-st*.10;
+            starShiftTarget=-Math.min(h*.12,st*.10);
             bgScaleTarget=1+Math.min(1,st/620)*.08;
             if(v.id!=='answer')headFade(v);
           });
@@ -397,13 +413,13 @@
       let startY=0,pulling=false,timer=null;
       function applyPull(d){
         const off=d*.42;
-        if(intro){intro.style.transition='opacity .18s linear';intro.style.transform='translateY('+(off*.70).toFixed(2)+'px)';intro.style.opacity=String(Math.max(.55,1-Math.abs(off)/420))}
-        if(covers){covers.style.transition='transform .18s linear';covers.style.transform='translateY('+(off*.36).toFixed(2)+'px) scale('+(1+Math.min(.06,Math.abs(off)*.0009)).toFixed(4)+')'}
-        starShiftTarget=off*.55;bgScaleTarget=1+Math.min(.05,Math.abs(off)*.0009);
+        if(intro){intro.style.transition='none';intro.style.transform='translate3d(0,'+(off*.72).toFixed(2)+'px,0)';intro.style.opacity=String(Math.max(.6,1-Math.abs(off)/460))}
+        if(covers){covers.style.transition='none';covers.style.transform='translate3d(0,'+(off*.34).toFixed(2)+'px,0)'}
+        starShiftTarget=Math.max(-h*.12,Math.min(h*.12,off*.5));bgScaleTarget=1+Math.min(.04,Math.abs(off)*.0008);
       }
       function resetPull(){
-        if(intro){intro.style.transition='transform .8s '+ease+',opacity .8s '+ease;intro.style.transform='translateY(0)';intro.style.opacity='1'}
-        if(covers){covers.style.transition='transform .8s '+ease;covers.style.transform='translateY(0) scale(1)'}
+        if(intro){intro.style.transition='transform .58s cubic-bezier(.16,.86,.3,1),opacity .4s ease-out';intro.style.transform='translate3d(0,0,0)';intro.style.opacity='1'}
+        if(covers){covers.style.transition='transform .58s cubic-bezier(.16,.86,.3,1)';covers.style.transform='translate3d(0,0,0)'}
         starShiftTarget=0;bgScaleTarget=1;
       }
       function homeActive(){
@@ -430,7 +446,13 @@
       }
     })();
 
-    addEventListener('resize',resize);resize();draw();
+    let rzT=null;
+    addEventListener('resize',()=>{clearTimeout(rzT);rzT=setTimeout(resize,170)},{passive:true});
+    document.addEventListener('visibilitychange',()=>{
+      if(document.hidden){running=false}
+      else if(!running){running=true;lastT=0;requestAnimationFrame(draw)}
+    });
+    resize();requestAnimationFrame(draw);
   </script>
 </body>
 </html>
